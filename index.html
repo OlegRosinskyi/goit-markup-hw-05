@@ -91,7 +91,7 @@
       <section class="slogan">
         <div class="container">
           <h1 class="slogan-text">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="slogan-btn">Замовити послугу</button>
+          <button type="button" class="slogan-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="features">
@@ -496,5 +496,13 @@
         </div>
       </div>
     </footer>
-  </body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close> <svg class="modal-clos-icon" width="30" height="30">
+           <use href="./images/btn-close.svg"></use> </svg> 
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+      </body>
 </html>
