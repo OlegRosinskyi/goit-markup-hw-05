@@ -651,8 +651,8 @@ body {
   right: 10px;
   top: 10px;
   fill: #000000;
-  /*border: 1px solid #909090;
-  border-radius: 50%;*/
+  border: none;
+  /*border-radius: 50%;*/
   background-color: #fff;
 }
 
