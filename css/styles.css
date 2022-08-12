@@ -668,7 +668,8 @@ body {
 
   transform: translateY(100%);
   transition: transform var(--animation-time) var(--animation-function);
-  overflow-y: scroll;
+  /* overflow-y: scroll;*/
+  overflow-y: auto;
 }
 .product-link:hover .product-text {
   transform: translatey(0%);
@@ -728,7 +729,7 @@ body {
   position: absolute;
   right: 10px;
   top: 10px;
-  fill: #000000;
+  /* fill: #000000;*/
   border: none;
   border: 1px solid #c41919;
   /*border-radius: 50%;*/
