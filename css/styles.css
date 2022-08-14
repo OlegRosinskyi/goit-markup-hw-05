@@ -135,8 +135,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
-
+  /*color: var(--main-text-color);*/
+  color: var(--accent-color);
   position: relative;
 }
 .header-link::after {
@@ -145,7 +145,7 @@ body {
   transition-property: opacity;
   transition-timing-function: var(--animation-function);
 
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 0px;
   bottom: -28px;
@@ -156,7 +156,7 @@ body {
   border-radius: 2px;
 }
 .header-link:hover::after {
-  opacity: 1;
+  opacity: 0;
 }
 .header-link:hover,
 .header-link:focus {
@@ -189,6 +189,7 @@ body {
 }
 /* --------------SLOGAN ------------*/
 .slogan {
+  display: block;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -259,7 +260,7 @@ body {
 .features-item:last-child {
   margin-right: auto;
 }
-.feature-icon {
+.features-icon {
   /* display: block;*/
   /*------------------------*/
   display: flex;
@@ -315,6 +316,7 @@ body {
   justify-content: space-between;
 }
 .promo-img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -346,6 +348,7 @@ body {
   background: #ffffff;
 }
 .info-img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -378,7 +381,7 @@ body {
 
 .info-soc-link {
   transition-duration: var(--animation-time);
-  transition-property: background-color fill;
+  transition-property: fill, background-color;
   transition-timing-function: var(--animation-function);
   width: 44px;
   height: 44px;
@@ -424,7 +427,7 @@ body {
 }*/
 .clients-link {
   transition-duration: var(--animation-time);
-  transition-property: fill;
+  transition-property: fill, border-color;
   transition-timing-function: var(--animation-function);
 
   width: 170px;
@@ -460,9 +463,9 @@ body {
   margin-right: 70px;
 }
 .footer-log {
-  transition-duration: var(--animation-function);
+  transition-duration: 250ms;
   transition-property: transform;
-  transition-timing-function: var(--animation-function);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   display: inline-block;
   font-family: "Raleway", sans-serif;
@@ -583,7 +586,7 @@ body {
 }
 .filter-btn {
   transition-duration: var(--animation-time);
-  transition-property: box-shadow background-color color;
+  transition-property: background-color, color, box-shadow;
   transition-timing-function: var(--animation-function);
   padding: 6px 27px;
 
@@ -598,7 +601,7 @@ body {
   /*cursor: pointer;*/
 }
 .filter-btn:hover {
-  background: var(--second-btn-color);
+  background-color: var(--second-btn-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -628,6 +631,7 @@ body {
 }
 
 .product-img {
+  display: block;
   max-width: 100%;
   height: auto;
 }
