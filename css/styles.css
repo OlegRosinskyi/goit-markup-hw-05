@@ -317,7 +317,7 @@ body {
   justify-content: space-between;
 }
 
-.promo-item {
+.promo-item-box {
   position: relative;
 }
 .promo-img {
@@ -327,7 +327,9 @@ body {
 }
 .promo-img-text {
   position: absolute;
-  max-width: 370px;
+
+  bottom: 0px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -338,10 +340,9 @@ body {
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
   height: 70px;
+  width: 370px;
   padding-top: 27px;
   padding-bottom: 27px;
-
-  display: block;
 }
 /* --------------INFO ------------*/
 .info {
