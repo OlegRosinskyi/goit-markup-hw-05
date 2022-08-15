@@ -7,7 +7,7 @@
   --accent-color: #2196f3;
   --main-accent-color: #ffffff;
   --s-second-text-color: #ffffff;
-  --animation-time: 1250ms;
+  --animation-time: 250ms;
   --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*a {
@@ -746,7 +746,7 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   /*transition-duration: var(--animation-time);
-  transition-property: box-shadow background-color color;
+  transition-property: box-shadow, background-color, color;
   transition-timing-function: var(--animation-function);*/
 
   transition: transform var(--animation-time) var(--animation-function),
