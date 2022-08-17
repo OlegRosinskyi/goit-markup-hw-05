@@ -139,13 +139,19 @@ body {
   /*color: var(--accent-color);*/
   position: relative;
 }
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
 .header-link::after {
   content: "";
   transition-duration: var(--animation-time);
   transition-property: opacity;
   transition-timing-function: var(--animation-function);
 
-  opacity: 0;
+  /*opacity: 0;*/
   position: absolute;
   left: 0px;
   bottom: -28px;
@@ -155,13 +161,37 @@ body {
   width: 100%;
   border-radius: 2px;
 }
+.header-link::after {
+  opacity: 0;
+}
+
+.header-link-activ {
+  color: var(--accent-color);
+}
+.header-link-activ::after {
+  opacity: 1;
+}
 .header-link:hover::after {
   opacity: 1;
 }
-.header-link:hover,
-.header-link:focus {
-  color: var(--accent-color);
-}
+/*.header-link-activ::after {
+  content: "";
+  transition-duration: var(--animation-time);
+  transition-property: opacity;
+  transition-timing-function: var(--animation-function);
+
+ 
+  position: absolute;
+  left: 0px;
+  bottom: -28px;
+  display: inline-block;
+  background-color: var(--accent-color);
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  opacity: 1;
+}*/
+
 .heade-link-communication {
   transition-duration: var(--animation-time);
   transition-property: color;
@@ -177,16 +207,18 @@ body {
 }
 .heade-link-communication:hover {
   color: var(--accent-color);
-  /*fill: var(--accent-color);*/
 }
+
 .heade-link-communication:focus {
   color: var(--accent-color);
 }
 .heade-icon {
   margin-right: 10px;
   fill: currentColor;
-  /*outline: 2px solid red;*/
 }
+
+/*outline: 2px solid red;*/
+
 /* --------------SLOGAN ------------*/
 .slogan {
   display: block;
@@ -589,6 +621,7 @@ body {
   fill: var(--main-accent-color);
   background: rgba(255, 255, 255, 0.1);
 }
+
 /*.info-soc-icon {
   outline: 2px solid black;
 } */
@@ -752,13 +785,14 @@ body {
   /*transition-duration: var(--animation-time);
   transition-property: box-shadow, background-color, color;
   transition-timing-function: var(--animation-function);*/
-
+  padding: 40px;
   transition: transform var(--animation-time) var(--animation-function),
     min-height var(--animation-time) var(--animation-function);
 
   /*transition: transform 500ms linear, min-height 500ms linear;*/
 }
-.backdrop.is-hidden .modal {
+.backdrop.modal {
+  /*.backdrop.is-hidden .modal*/
   transform: translate(-50%, -50%) scale(0) rotate(0);
   min-height: 0;
 }
@@ -774,6 +808,15 @@ body {
   background-color: #fff;
 }
 
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color);
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
